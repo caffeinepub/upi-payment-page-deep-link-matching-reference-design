@@ -1,0 +1,9 @@
+{
+  "frontend/src/App.tsx": "Main app component that sets up TanStack Router and renders the PaymentPage as the root route.",
+  "frontend/src/pages/PaymentPage.tsx": "UPI payment page with Premium Access header, ₹99 monthly pricing, feature checklist, enlarged \"GET PRIMIUM\" button (h-16, text-xl) that opens UPI deep link, and security indicators using shadcn/ui components.",
+  "frontend/index.css": "Global stylesheet with OKLCH color system customized for a payment page theme featuring neutral backgrounds with green success accents for both light and dark modes.",
+  "frontend/tailwind.config.js": "Tailwind configuration extended with success color tokens and consistent design system for the payment checkout experience.",
+  "frontend/src/hooks/useQueries.ts": "Empty placeholder file as no backend queries are required for this client-side payment page.",
+  "frontend/src/main.tsx": "Application entry point that sets up React Query, Internet Identity provider, and renders the App component with correct CSS import path from src directory.",
+  "frontend/src/index.css": "Global stylesheet with OKLCH color system customized for a payment page theme featuring neutral backgrounds with green success accents for both light and dark modes."
+}

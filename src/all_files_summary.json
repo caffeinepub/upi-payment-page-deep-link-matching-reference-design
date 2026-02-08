@@ -1,0 +1,16 @@
+{
+  "backend/main.mo": "Empty Motoko canister actor with no implemented logic.",
+  "feature_evidence.json": "Metadata describing two UI modification features tied to PaymentPage.tsx, including removed copy-link action and updated UPI button.",
+  "frontend-file-summaries.txt": "Prewritten summaries of key frontend files including App, PaymentPage, styles, config, and hooks.",
+  "frontend/index.css": "Empty file placeholder containing no styles.",
+  "frontend/index.html": "HTML entry point that mounts the React app and loads main.tsx.",
+  "frontend/src/App.tsx": "Sets up TanStack Router and renders PaymentPage as the root route.",
+  "frontend/src/hooks/useActor.ts": "Provides an authenticated or anonymous backend actor and refreshes dependent queries when identity changes.",
+  "frontend/src/hooks/useInternetIdentity.ts": "Implements Internet Identity auth provider and hook for managing login, identity state, and persistence.",
+  "frontend/src/hooks/useQueries.ts": "Empty placeholder since no backend queries are required.",
+  "frontend/src/index.css": "Tailwind base with OKLCH color variables and themed light/dark styles for the UI.",
+  "frontend/src/main.tsx": "React entry point setting up QueryClient, InternetIdentityProvider, and rendering the App component.",
+  "frontend/src/pages/PaymentPage.tsx": "Premium UPI payment page UI with features list and a primary button that opens a hardcoded UPI deep link.",
+  "frontend/tailwind.config.js": "Tailwind configuration extending colors, radius, animations, and enabling typography, container queries, and animation plugins.",
+  "project_state.json": "Stores the project’s schema version, current state, feature list, and new feature requests for building a UPI payment page. Contains configuration details, UI requirements, and UPI link parameters used across the project."
+}

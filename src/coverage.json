@@ -1,0 +1,48 @@
+{
+  "kind": "coverage_report",
+  "version": "1.0",
+  "generatedAt": "2026-02-08T07:01:54.018Z",
+  "sources": {
+    "buildRequest": true,
+    "implementationPlan": true
+  },
+  "requirements": {
+    "total": 2,
+    "implemented": 2,
+    "items": [
+      {
+        "id": "REQ-6",
+        "summary": "Remove the secondary \"Copy Link\" action from the payment page UI, including the copy-to-clipboard logic and any copy-status messaging, so only the primary UPI action remains.",
+        "status": "implemented",
+        "plannedFiles": [
+          "frontend/src/pages/PaymentPage.tsx"
+        ],
+        "matchedFiles": [
+          "frontend/src/pages/PaymentPage.tsx"
+        ]
+      },
+      {
+        "id": "REQ-7",
+        "summary": "Increase the size of the primary UPI payment button and change its label text from \"Pay via UPI\" to \"GET PRIMIUM\" (exact spelling), while preserving the existing UPI deep link behavior and amount (am=99).",
+        "status": "implemented",
+        "plannedFiles": [
+          "frontend/src/pages/PaymentPage.tsx"
+        ],
+        "matchedFiles": [
+          "frontend/src/pages/PaymentPage.tsx"
+        ]
+      }
+    ]
+  },
+  "changedFiles": [
+    "build-request.json",
+    "feature_evidence.json",
+    "frontend-file-summaries.txt",
+    "frontend-implementation-plan.json",
+    "frontend/src/pages/PaymentPage.tsx",
+    "project_state.json",
+    "scratch/component-selection.json",
+    "spec.md",
+    "spec_vs_diff_report.json"
+  ]
+}

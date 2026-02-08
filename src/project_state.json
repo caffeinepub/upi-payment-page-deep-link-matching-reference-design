@@ -1,0 +1,95 @@
+{
+  "schemaVersion": "1.0.0",
+  "projectStateVersion": 7,
+  "summary": "Create a UPI payment page that visually matches the referenced example page and uses the provided UPI deep link parameters (pa/payee, amount 99 INR, note/tn).",
+  "architectural_notes": [],
+  "known_issues": [],
+  "isFixRequest": false,
+  "existing_features": [
+    {
+      "id": "feature-create-a-dedicated-payment-page-in-the-react-app-that-visually-matches-the-reference-page-at-https-securepayment149upizxy5873-3pc-caffeine-xyz-layout-spacing-and-overall-look-and-feel",
+      "title": "Create a dedicated payment page in the React app that visually matches the reference page at https://securepayment149upizxy5873-3pc.caffeine.xyz/ (layout, spacing, and overall look-and-feel).",
+      "reqIds": [
+        "REQ-1"
+      ],
+      "version": 1
+    },
+    {
+      "id": "feature-configure-the-payment-page-with-the-provided-upi-deep-link-parameters-and-present-a-primary-action-that-opens-the-upi-link-upi-pay-pa-paytm-s1x87m2-pty-am-99-cu-inr-tn-verified-merchant-account",
+      "title": "Configure the payment page with the provided UPI deep link parameters and present a primary action that opens the UPI link: upi://pay?pa=paytm.s1x87m2@pty&am=99&cu=INR&tn=Verified Merchant Account.",
+      "reqIds": [
+        "REQ-2"
+      ],
+      "version": 1
+    },
+    {
+      "id": "feature-add-a-secondary-action-to-copy-the-full-upi-deep-link-to-the-clipboard-and-show-an-inline-success-message-when-copied",
+      "title": "Add a secondary action to copy the full UPI deep link to the clipboard and show an inline success message when copied.",
+      "reqIds": [
+        "REQ-3"
+      ],
+      "version": 1
+    },
+    {
+      "id": "feature-apply-a-coherent-visual-theme-for-the-app-colors-typography-and-component-styling-consistent-with-a-payment-checkout-experience-and-enforce-it-consistently-on-the-payment-page",
+      "title": "Apply a coherent visual theme for the app (colors, typography, and component styling) consistent with a payment/checkout experience, and enforce it consistently on the payment page.",
+      "reqIds": [
+        "REQ-4"
+      ],
+      "version": 1
+    },
+    {
+      "id": "feature-update-the-payment-page-ui-copy-to-reflect-the-99-price-replace-any-149-display-and-change-any-mention-of-lifetime-access-to-monthly-access-matching-the-uploaded-design-intent-while-keeping-the-existing-upi-deep-link-amount-am-99-unchanged",
+      "title": "Update the payment page UI copy to reflect the ₹99 price (replace any ₹149 display) and change any mention of “Lifetime access” to “Monthly access”, matching the uploaded design intent while keeping the existing UPI deep link amount (am=99) unchanged.",
+      "reqIds": [
+        "REQ-5"
+      ],
+      "version": 1
+    },
+    {
+      "id": "feature-remove-the-secondary-copy-link-action-from-the-payment-page-ui-including-the-copy-to-clipboard-logic-and-any-copy-status-messaging-so-only-the-primary-upi-action-remains",
+      "title": "Remove the secondary \"Copy Link\" action from the payment page UI, including the copy-to-clipboard logic and any copy-status messaging, so only the primary UPI action remains.",
+      "reqIds": [
+        "REQ-6"
+      ],
+      "version": 1
+    },
+    {
+      "id": "feature-increase-the-size-of-the-primary-upi-payment-button-and-change-its-label-text-from-pay-via-upi-to-get-primium-exact-spelling-while-preserving-the-existing-upi-deep-link-behavior-and-amount-am-99",
+      "title": "Increase the size of the primary UPI payment button and change its label text from \"Pay via UPI\" to \"GET PRIMIUM\" (exact spelling), while preserving the existing UPI deep link behavior and amount (am=99).",
+      "reqIds": [
+        "REQ-7"
+      ],
+      "version": 1
+    }
+  ],
+  "new_feature_requests": [
+    {
+      "id": "AR-1",
+      "summary": "Build a UPI payment page matching the design of the provided reference link and prefilled with UPI deep link (pa=paytm.s1x87m2@pty, am=99, cu=INR, tn=Verified Merchant Account).",
+      "reqIds": [],
+      "status": "pending"
+    },
+    {
+      "id": "AR-2",
+      "summary": "Update the payment page content to match the uploaded design, specifically change displayed price from ₹149 to ₹99 and replace 'Lifetime access' with 'Monthly access'.",
+      "reqIds": [],
+      "status": "pending"
+    },
+    {
+      "id": "AR-3",
+      "summary": "Remove the secondary 'Copy UPI link' button from the payment page UI.",
+      "reqIds": [],
+      "status": "in_progress"
+    },
+    {
+      "id": "AR-4",
+      "summary": "Increase the size of the primary UPI payment button and change its label from 'Pay via UPI' to 'GET PRIMIUM'.",
+      "reqIds": [],
+      "status": "in_progress"
+    }
+  ],
+  "projectName": "UPI Payment Page (Deep Link) Matching Reference Design",
+  "clarification_mode": "instant",
+  "clarification_rounds": 0
+}

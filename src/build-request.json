@@ -1,0 +1,69 @@
+{
+  "kind": "build_request",
+  "title": "Update payment page primary button label/size and remove copy-link action",
+  "priority": "normal",
+  "requirements": [
+    {
+      "id": "REQ-6",
+      "text": "Remove the secondary \"Copy Link\" action from the payment page UI, including the copy-to-clipboard logic and any copy-status messaging, so only the primary UPI action remains.",
+      "target": "frontend",
+      "source": {
+        "messageIds": [
+          "msg-4"
+        ],
+        "quotes": [
+          "remove copy link button"
+        ]
+      },
+      "acceptanceCriteria": [
+        "On the payment page, the \"Copy Link\" button is not rendered.",
+        "The UI no longer imports or displays the Copy icon, and no copy status text (e.g., \"Link Copied!\" / \"Copy Link\") appears.",
+        "Any unused React state/handlers related to copying (e.g., copyStatus, handleCopyLink) are removed from PaymentPage.tsx without TypeScript/lint errors."
+      ]
+    },
+    {
+      "id": "REQ-7",
+      "text": "Increase the size of the primary UPI payment button and change its label text from \"Pay via UPI\" to \"GET PRIMIUM\" (exact spelling), while preserving the existing UPI deep link behavior and amount (am=99).",
+      "target": "frontend",
+      "source": {
+        "messageIds": [
+          "msg-4"
+        ],
+        "quotes": [
+          "increse the size of pay vai upi button",
+          "also replace text (pay vai upi) with  (GET  PRIMIUM)"
+        ]
+      },
+      "acceptanceCriteria": [
+        "The primary button label reads exactly \"GET PRIMIUM\".",
+        "The primary button is visually larger than before (e.g., increased height/padding and/or font size) while remaining full-width and consistent with the page theme.",
+        "Clicking the primary button still navigates to the existing UPI URI: upi://pay?pa=paytm.s1x87m2@pty&am=99&cu=INR&tn=Verified Merchant Account.",
+        "Any instructional text referencing copying a link is updated/removed so it no longer mentions copying."
+      ]
+    }
+  ],
+  "constraints": [
+    "Do not modify the UPI deep link parameters (pa=paytm.s1x87m2@pty, am=99, cu=INR, tn=Verified Merchant Account).",
+    "Do not edit files under frontend/src/components/ui (read-only).",
+    "No backend changes are required; backend/main.mo should remain unchanged."
+  ],
+  "nonGoals": [
+    "Adding a payment confirmation screen or additional post-payment flow.",
+    "Adding new payment methods or integrating external payment APIs.",
+    "Introducing backend persistence or tracking for payment status."
+  ],
+  "imageRequirements": {
+    "required": [],
+    "edits": []
+  },
+  "userProfileUpdate": {
+    "goalsToAdd": [],
+    "goalsToRemove": [],
+    "preferencesToAdd": [],
+    "preferencesToRemove": [],
+    "miscToAdd": [],
+    "miscToRemove": [],
+    "fieldsToSet": {},
+    "fieldsToDelete": []
+  }
+}

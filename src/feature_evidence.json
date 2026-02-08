@@ -1,0 +1,41 @@
+{
+  "kind": "feature_evidence_report",
+  "features": [
+    {
+      "featureId": "feature-remove-the-secondary-copy-link-action-from-the-payment-page-ui-including-the-copy-to-clipboard-logic-and-any-copy-status-messaging-so-only-the-primary-upi-action-remains",
+      "featureTitle": "Remove the secondary \"Copy Link\" action from the payment page UI, including the copy-to-clipboard logic and any copy-status messaging, so only the primary UPI action remains.",
+      "files": [
+        "frontend/src/pages/PaymentPage.tsx"
+      ],
+      "components": [
+        "core-infrastructure@1.0.2",
+        "shadcn-ui@1.0.0",
+        "build-template-react@1.0.0",
+        "initial-app@1.0.0",
+        "github-export-icp-cli@1.0.0"
+      ],
+      "testIds": [
+        "REQ-6"
+      ],
+      "confidence": "high"
+    },
+    {
+      "featureId": "feature-increase-the-size-of-the-primary-upi-payment-button-and-change-its-label-text-from-pay-via-upi-to-get-primium-exact-spelling-while-preserving-the-existing-upi-deep-link-behavior-and-amount-am-99",
+      "featureTitle": "Increase the size of the primary UPI payment button and change its label text from \"Pay via UPI\" to \"GET PRIMIUM\" (exact spelling), while preserving the existing UPI deep link behavior and amount (am=99).",
+      "files": [
+        "frontend/src/pages/PaymentPage.tsx"
+      ],
+      "components": [
+        "core-infrastructure@1.0.2",
+        "shadcn-ui@1.0.0",
+        "build-template-react@1.0.0",
+        "initial-app@1.0.0",
+        "github-export-icp-cli@1.0.0"
+      ],
+      "testIds": [
+        "REQ-7"
+      ],
+      "confidence": "high"
+    }
+  ]
+}

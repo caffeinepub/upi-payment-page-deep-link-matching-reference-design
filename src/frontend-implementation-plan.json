@@ -1,0 +1,40 @@
+{
+  "kind": "implementation_plan",
+  "version": "1.0",
+  "title": "Payment page: remove Copy Link and update primary UPI button label/size",
+  "requirements": [
+    {
+      "id": "REQ-6",
+      "summary": "Remove the secondary Copy Link action and all related copy-to-clipboard UI/state from the payment page.",
+      "acceptanceCriteria": [
+        "On the payment page, the \"Copy Link\" button is not rendered.",
+        "The UI no longer imports or displays the Copy icon, and no copy status text (e.g., \"Link Copied!\" / \"Copy Link\") appears.",
+        "Any unused React state/handlers related to copying (e.g., copyStatus, handleCopyLink) are removed from PaymentPage.tsx without TypeScript/lint errors."
+      ],
+      "file_operations": [
+        {
+          "path": "frontend/src/pages/PaymentPage.tsx",
+          "operation": "modify",
+          "description": "Update the payment page UI to remove the secondary \"Copy Link\" Button and its copy-to-clipboard logic (remove useState/copyStatus, handleCopyLink, and related conditional copy-status label). Also remove the unused lucide-react Copy icon import and any copy-related messaging. The page continues to use shadcn-ui components (Button, Card, Badge, Separator) for consistent styling; verify the component's usage instructions before implementing."
+        }
+      ]
+    },
+    {
+      "id": "REQ-7",
+      "summary": "Make the primary UPI button larger and change its label to \"GET PRIMIUM\" while preserving the existing UPI deep link behavior and amount.",
+      "acceptanceCriteria": [
+        "The primary button label reads exactly \"GET PRIMIUM\".",
+        "The primary button is visually larger than before (e.g., increased height/padding and/or font size) while remaining full-width and consistent with the page theme.",
+        "Clicking the primary button still navigates to the existing UPI URI: upi://pay?pa=paytm.s1x87m2@pty&am=99&cu=INR&tn=Verified Merchant Account.",
+        "Any instructional text referencing copying a link is updated/removed so it no longer mentions copying."
+      ],
+      "file_operations": [
+        {
+          "path": "frontend/src/pages/PaymentPage.tsx",
+          "operation": "modify",
+          "description": "Adjust the primary UPI Button to be visually larger via Tailwind className overrides (e.g., increased height/padding and font size) without editing read-only files under frontend/src/components/ui. Change the button text from \"Pay via UPI\" to exactly \"GET PRIMIUM\" and keep the existing onClick behavior that navigates to the unchanged UPI_URI (including am=99). Update the instruction copy to remove any mention of copying a link. Continue using shadcn-ui Button for layout/theme consistency; verify the component's usage instructions before implementing."
+        }
+      ]
+    }
+  ]
+}
